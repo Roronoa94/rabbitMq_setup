@@ -1,0 +1,37 @@
+{
+  "name": "rabbitMq_setup",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node src/bin/www --require 'dotenv/config'",
+    "build": "babel src --out-dir dist --source-maps",
+    "serve": "node dist/bin/www"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.2",
+    "amqplib": "^0.5.6",
+    "awilix": "^4.2.6",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "path": "^0.12.7",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^2.0.4"
+  }
+}
